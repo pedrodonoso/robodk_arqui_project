@@ -1,5 +1,5 @@
 from robodk.robolink import *  # API to communicate with RoboDK
-from robodk.robomath import *  # basic matrix operations
+# from robodk.robomath import *  # basic matrix operations
 
 import src.connect as connect
 import src.move as move

@@ -17,3 +17,8 @@
 ```bash
     $ pip install robodk
 ```
+
+# References
+
+- [RodoDK API Python](https://robodk.com/doc/en/PythonAPI/index.html)
+- [RoboDK](https://robodk.com/doc/es/Basic-Guide.html)
