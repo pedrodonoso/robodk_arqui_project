@@ -1,8 +1,9 @@
 from robodk.robolink import *  # API to communicate with RoboDK
 from robodk.robomath import *  # basic matrix operations
 
-def moverobot(RDK):
+def moverobot(RDK, robot):
     # Arrow keys program example
+    print("moving")
 
     # get a robot
     robot = RDK.Item('', ITEM_TYPE_ROBOT)

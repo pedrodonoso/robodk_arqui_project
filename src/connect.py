@@ -8,7 +8,12 @@ def connect2robots(RDK):
     # loop through all the robots and connect to the robot
     errors = ''
     count = 0
+    print("buscando...")
+    print("robots: ", robots)
+    if (len(robots) == 0):
+        print("no hay robots.")
     for robot in robots:
+        print("robot: ", robot)
         count = count + 1
 
         # force disconnect from all robots by simulating a double click
@@ -41,7 +46,8 @@ def connect2robots(RDK):
             errors = errors + 'Problems connecting: ' + robot.Name() + ': ' + msg + '\n'
         else:
             # move to the joint position in the simulator:
-            robot.MoveJ(jnts, False)
+            # robot.MoveJ(jnts, False)
+            return robot
 
     # Display connection errors, if any
     if len(errors) > 0:
@@ -49,3 +55,5 @@ def connect2robots(RDK):
         raise Exception(errors)
     else:
         quit(0)
+
+    
