@@ -1,9 +1,16 @@
 from robodk.robolink import *  # API to communicate with RoboDK
 from robodk.robomath import *  # basic matrix operations
 
-import src.connect as connect
-import src.move as move
-import src.connect_by_name as cbn
+sys.path.append('./src/')
+
+from Movements import Movements as m
+from Connections import Connections as c
+from lib import connect_by_name as cbn
+# import src.lib.connect as connect
+# import src.lib.move as move
+# import src.lib.connect_by_name as cbn
+
+# from src.Movements import Movements as m
 
 from dotenv import load_dotenv
 import os
@@ -19,15 +26,15 @@ if (DEV == 1):
     RDK = Robolink()
 else:
     print("PRODUCTION")
-    RDK = Robolink(args=['-NOSPLASH','-HIDDEN'])
+    # RDK = Robolink(args=['-NOSPLASH','-HIDDEN'])
+    RDK = Robolink(args=["-NOUI", "-EXIT_LAST_COM"])
     RDK.setWindowState(windowstate=-1)
 
-
-
 PATH_STATION = "C:/Users/pedro/OneDrive - Universidad Técnica Federico Santa María/External-projects/robodk_arqui/rdk_files/arqui_robot.rdk"
-cbn.connect_by_name(RDK, name_robot="UR5", path_station=PATH_STATION)
+ROBOT_IP = os.environ['ROBOT_IP']
 
-# robot = connect.connect2robots(RDK)
-# print("conectado terminado")
-# move.moverobot(RDK, robot)
-# cbn.movement_test()
+RDK, robot = cbn.connect_by_name(RDK=RDK, name_robot="UR5", path_station=PATH_STATION, robot_ip=ROBOT_IP)
+
+print("Conectado!!!!...")
+# m.movement_test(RDK=RDK, robot=robot)
+# m.moverobotWASD(RDK=RDK, robot=robot)

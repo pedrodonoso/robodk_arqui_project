@@ -16,6 +16,15 @@
 
 ```bash
     $ pip install robodk
+    $ pip install Flask
+```
+
+# Run api
+
+```bash
+    $ cd api
+    $ flask --app main run
+    $ flask --app main --debug run
 ```
 
 # References
