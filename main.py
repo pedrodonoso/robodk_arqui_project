@@ -23,14 +23,17 @@ print("DEV: ", DEV)
 
 if (DEV == 1):
     print("DEV")
-    RDK = Robolink()
-else:
-    print("PRODUCTION")
     # RDK = Robolink(args=['-NOSPLASH','-HIDDEN'])
     RDK = Robolink(args=["-NOUI", "-EXIT_LAST_COM"])
     RDK.setWindowState(windowstate=-1)
+    # modo de ejecucion
+    RDK.setRunMode(RUNMODE_SIMULATE)
+else:
+    print("PRODUCTION")
+    RDK = Robolink(args=['/NOSPLASH','/NOSHOW'])
+    RDK.setRunMode(RUNMODE_RUN_ROBOT) 
 
-PATH_STATION = "C:/Users/pedro/OneDrive - Universidad Técnica Federico Santa María/External-projects/robodk_arqui/rdk_files/arqui_robot.rdk"
+PATH_STATION = os.environ['PATH_STATION']
 ROBOT_IP = os.environ['ROBOT_IP']
 
 RDK, robot = cbn.connect_by_name(RDK=RDK, name_robot="UR5", path_station=PATH_STATION, robot_ip=ROBOT_IP)

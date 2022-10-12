@@ -35,10 +35,6 @@ def connect_by_name(RDK: Robolink, name_robot: str, path_station: str, robot_ip:
 
     print("IP: ", robot_ip)
     
-    # modo de ejecucion
-    RDK.setRunMode(RUNMODE_RUN_ROBOT) 
-    # RDK.setRunMode(RUNMODE_SIMULATE)
-    
     try:
         exist_path = RDK.getParam(param=FILE_OPENSTATION, str_type=True)
         # print("exist: ", exist_path)
