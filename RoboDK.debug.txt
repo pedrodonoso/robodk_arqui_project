@@ -1,0 +1,57 @@
+16:19:09.724 (+0 ms): RoboDK v5.5.0 debug file RoboDK.debug.txt, started on 12-10-2022-16:19:09.724
+16:19:09.724 (+1 ms): Debug: OS:  LIN64
+16:19:09.724 (+0 ms): Debug: Date build:  Aug 29 2022
+16:19:09.724 (+0 ms): Debug: Main process ID:  23080
+16:19:09.724 (+0 ms): Debug: Thread ID:  0x7f8bd4b24bc0
+16:19:09.724 (+0 ms): Debug: Processing event...
+16:19:09.724 (+0 ms): Debug: Starting RobotTools...
+16:19:09.725 (+1 ms): Debug: Loading settings...
+16:19:09.725 (+0 ms): Debug: Settings loaded
+16:19:09.811 (+86 ms): Debug: Statusbar:  "Idioma establecido en Spanish"
+16:19:09.814 (+3 ms): Debug: Updating recent files menu...
+16:19:09.818 (+4 ms): Debug: Created language menu
+16:19:09.860 (+42 ms): Debug: No 3D window to render
+16:19:09.875 (+15 ms): Debug: Setting up main GL window...
+16:19:09.875 (+0 ms): Debug: Starting main window...
+16:19:09.875 (+0 ms): Debug: No 3D window to render
+16:19:09.875 (+0 ms): Debug: LC start...
+16:19:09.876 (+1 ms): Debug: LC message:  LC device not found
+16:19:09.876 (+0 ms): Debug: Dongle not found or cannot read
+16:19:09.876 (+0 ms): Debug: LC start...
+16:19:09.876 (+0 ms): Debug: LC message:  LC device not found
+16:19:09.876 (+0 ms): Debug: Dongle not found or cannot read
+16:19:09.876 (+0 ms): Debug: No 3D window to render
+16:19:09.876 (+0 ms): Debug: Loading plugin:  "/home/pdonoso/RoboDK/bin/plugins/libCollisionFreePlanner.so"
+16:19:09.877 (+1 ms): Debug: Loading plugin file:  "/home/pdonoso/RoboDK/bin/plugins/libCollisionFreePlanner.so"
+16:19:09.877 (+0 ms): Debug: Loading plugin  "CollisionFreePlanner"
+16:19:09.877 (+0 ms): Debug: Using settings:  ""
+16:19:09.877 (+0 ms): Debug: Setting up the status bar
+16:19:09.880 (+3 ms): Debug: Inserting menu at the end of the utilities menu
+16:19:09.880 (+0 ms): Debug: Setting up the menu bar
+16:19:09.881 (+1 ms): Debug: List of LOADED plugins:
+16:19:09.881 (+0 ms): Debug:      "CollisionFreePlanner"
+16:19:09.881 (+0 ms): Debug: Done list of plugins
+16:19:09.881 (+0 ms): Debug: Statusbar:  "Cargado 1 plugins"
+16:19:09.881 (+0 ms): Debug: Reading preferred layout settings...
+16:19:09.883 (+2 ms): Debug: Done
+16:19:09.883 (+0 ms): Debug: Updating window title...
+16:19:09.883 (+0 ms): Debug: Entering main loop
+16:19:09.894 (+11 ms): Debug: Running arguments...
+16:19:09.894 (+0 ms): Debug: Running parameter:  "-NOUI"
+16:19:09.894 (+0 ms): Debug: Running parameter:  "-NEWINSTANCE"
+16:19:09.894 (+0 ms): Debug: Running parameter:  "-NOSPLASH"
+16:19:09.894 (+0 ms): Debug: Running parameter:  "-DEBUG"
+16:19:09.894 (+0 ms): Debug: Running parameter:  "rdk_files/arqui_robot.rdk"
+16:19:09.894 (+0 ms): Debug: Updating recent files menu...
+16:19:09.898 (+4 ms): Debug: Statusbar:  "Cargando: rdk_files/arqui_robot.rdk"
+16:19:09.942 (+44 ms): Debug: Using temporary file name to load station:  "/tmp/RoboDK.WkcSTv"
+16:19:09.943 (+1 ms): Debug: Loading:  "rdk_files/arqui_robot.rdk"
+16:19:09.944 (+1 ms): Debug: Version Station File 101
+16:19:10.113 (+169 ms): Debug: No 3D window to render
+16:19:10.115 (+2 ms): Debug: Statusbar:  "Carga finalizada."
+16:19:10.115 (+0 ms): Debug: Loading complete
+16:19:10.115 (+0 ms): Debug: No 3D window to render
+16:19:10.115 (+0 ms): Debug: Starting RoboDK API Server
+16:19:10.115 (+0 ms): Debug: Available local IP addresses (IPv4)
+16:19:10.116 (+1 ms): Debug: Message skipped (NOUI):  "El servidor está ejecutándose en 192.168.0.25:20500"
+16:19:10.116 (+0 ms): Debug: RoboDK API status:  El servidor está ejecutándose en 192.168.0.25:20500
