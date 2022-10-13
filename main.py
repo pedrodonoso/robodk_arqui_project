@@ -24,10 +24,14 @@ print("DEV: ", DEV)
 if (DEV == 1):
     print("DEV")
     # RDK = Robolink(args=['-NOSPLASH','-HIDDEN'])
-    RDK = Robolink(args=["-NOUI", "-EXIT_LAST_COM"])
-    RDK.setWindowState(windowstate=-1)
+    
+    # RDK = Robolink(args=['-NOSPLASH','-NOSHOW'])
+    # RDK = Robolink(args=['NOSPLASH','NOSHOW'])
+    RDK = Robolink(args=['/NOUI', '/NOSPLASH','/NOSHOW', '/HIDDEN', '/NO_WINDOWS'])
+    RDK.setWindowState(windowstate=WINDOWSTATE_HIDDEN)
+    RDK.HideRoboDK()
     # modo de ejecucion
-    RDK.setRunMode(RUNMODE_SIMULATE)
+    #RDK.setRunMode(RUNMODE_RUN_ROBOT)
 else:
     print("PRODUCTION")
     RDK = Robolink(args=['/NOSPLASH','/NOSHOW'])
