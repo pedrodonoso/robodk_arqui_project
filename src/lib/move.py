@@ -1,5 +1,6 @@
 from robodk.robolink import *  # API to communicate with RoboDK
 from robodk.robomath import *  # basic matrix operations
+from msvcrt import getch
 
 def moverobot(RDK, robot):
     # Arrow keys program example
@@ -20,7 +21,6 @@ def moverobot(RDK, robot):
     # define the move increment
     move_speed = 10
 
-    from msvcrt import getch
     while True:
         key = (ord(getch()))
         move_direction = [0, 0, 0]
