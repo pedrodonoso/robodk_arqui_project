@@ -63,8 +63,8 @@ def connect_by_name(RDK: Robolink, name_robot: str, path_station: str, robot_ip:
 
         print("ACTIVE_STATION: ", RDK.ActiveStation().Name())
 
-        # robot_connection = robot.ConnectSafe(robot_ip=robot_ip, max_attempts=MAX_ATTEMPTS, wait_connection=WAIT_CONNECTION)
-        robot_connection = robot.Connect(robot_ip=robot_ip)
+        robot_connection = robot.ConnectSafe(robot_ip=robot_ip, max_attempts=MAX_ATTEMPTS, wait_connection=WAIT_CONNECTION)
+        # robot_connection = robot.Connect(robot_ip=robot_ip)
 
         if not robot.Valid():
             raise Exception("Robot not selected or not valid")
