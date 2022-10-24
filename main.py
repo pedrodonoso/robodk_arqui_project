@@ -43,5 +43,5 @@ ROBOT_IP = os.environ['ROBOT_IP']
 RDK, robot = cbn.connect_by_name(RDK=RDK, name_robot="UR5", path_station=PATH_STATION, robot_ip=ROBOT_IP)
 
 # print("Conectado!!!!...")
-# m.movement_test(RDK=RDK, robot=robot)
-m.moverobotWASD(RDK=RDK, robot=robot)
+m.movement_test(RDK=RDK, robot=robot)
+# m.moverobotWASD(RDK=RDK, robot=robot)
