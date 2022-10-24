@@ -44,4 +44,4 @@ RDK, robot = cbn.connect_by_name(RDK=RDK, name_robot="UR5", path_station=PATH_ST
 
 # print("Conectado!!!!...")
 # m.movement_test(RDK=RDK, robot=robot)
-# m.moverobotWASD(RDK=RDK, robot=robot)
+m.moverobotWASD(RDK=RDK, robot=robot)
