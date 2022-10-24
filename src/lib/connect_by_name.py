@@ -89,6 +89,7 @@ def connect_by_name(RDK: Robolink, name_robot: str, path_station: str, robot_ip:
         return RDK, robot
     finally:
         # robot.Disconnect()
-        RDK.CloseRoboDK()
+
+        ## RDK.CloseRoboDK()
         print("Terminado")
         return RDK, robot
