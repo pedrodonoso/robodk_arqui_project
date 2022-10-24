@@ -81,7 +81,6 @@ def connect_by_name(RDK: Robolink, name_robot: str, path_station: str, robot_ip:
         # print("estado conexión: ", robot.ConnectedState()[1])  
         # RDK.CloseRoboDK()
         # print("Terminado")
-        return
     except:
         # robot.Disconnect()
         # RDK.CloseRoboDK()
