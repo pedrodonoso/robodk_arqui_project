@@ -1,7 +1,7 @@
 from robodk.robolink import *  # API to communicate with RoboDK
 from robodk.robomath import *  # basic matrix operations
 
-sys.path.append('./src/')
+sys.path.append('src/')
 
 from Movements import Movements as m
 from Connections import Connections as c
